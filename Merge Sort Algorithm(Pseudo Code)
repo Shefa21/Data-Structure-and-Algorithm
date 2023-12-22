@@ -1,0 +1,10 @@
+mergeSort(arr[],l,r)  //arr is array, l is left, r is right
+{
+   if(l<r)
+   {
+      midpoint = (l+r)/2
+      mergeSort(arr,l,m)
+      mergeSort(arr,m+1,r)
+      merge(arr,l,m,r)
+   }
+}
